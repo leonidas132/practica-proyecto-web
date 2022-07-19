@@ -41,7 +41,7 @@ public class ImpDatosBusqueda  extends conexion implements DAOconexion<DatosBusq
     @Override
     public List<DatosBusqueda> listar() {
         List<DatosBusqueda> listaBusqueda = new ArrayList<>();
-        String sql = "select texto,url,fecha from datobusqueda";
+        String sql = "select texto,url,contenido_web,fecha from datobusqueda";
         try {
             if(null==preparedStatementListar){
                 preparedStatementListar = conexion.getConnexion().prepareStatement(sql);
@@ -51,6 +51,7 @@ public class ImpDatosBusqueda  extends conexion implements DAOconexion<DatosBusq
              DatosBusqueda datosBusqueda = new DatosBusqueda();
              datosBusqueda.setText(resultSet.getString("texto"));
              datosBusqueda.setUrl(resultSet.getString("url"));
+             datosBusqueda.setContenido_web(resultSet.getString("contenido_web"));
              datosBusqueda.setFecha(Fechas.getLocalDateTime(resultSet.getString("fecha")));
              listaBusqueda.add(datosBusqueda);
             }

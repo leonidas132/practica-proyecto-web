@@ -1,8 +1,39 @@
-*{
-    font-family: "Gill Sans Ultra Bold Condensed";
+
+body{
+    background-color: azure;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: auto;
 
 }
-body{
-    background-color: brown;
-    color:blue ;
+
+.formulario{
+    margin: 250px;
+    padding: auto;
+}
+label{
+    padding: 0px;
+    justify-content: center;
+}
+input{
+    text-align: center;
+    justify-content: center;
+    width: 250px;
+    padding:4px;
+    margin: 4px;
+}
+#Url{
+    width:250px;
+}
+
+button{
+
+    align-content: center;
+    justify-content: center;
+    padding: 4px;
+    margin: 4px;
+}
+
+button:hover{
+    background-color: cadetblue;
 }

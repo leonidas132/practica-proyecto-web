@@ -1,0 +1,26 @@
+table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+}
+th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:center;
+    background-color: #4D648D;
+    color: white;
+}
+td{
+    padding-top: 5PX;
+    padding-bottom: 5px;
+}
+
+td,th{
+    border: 1px solid #ddd;
+
+}
+tr:nth-child(even){
+    background-color:#8c98a9;
+}
+
