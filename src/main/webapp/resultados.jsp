@@ -15,35 +15,22 @@
 <body>
 <%
     ImpDatosBusqueda impDatosBusqueda = new ImpDatosBusqueda();
-    try {
+    DatosBusqueda datosBusqueda = new DatosBusqueda();
 
-        for (DatosBusqueda lista:impDatosBusqueda.listar()){
-
-            out.print(lista.getText());
-            out.print(lista.getUrl());
-            out.print(lista.getContenido_web());
-            out.print(lista.getFecha());
-
-        }
-    }catch (NullPointerException E) {
-        E.getMessage();
-    }
 %>
 
 <table>
     <thead>
     <th>Texto</th> <!--los th se utilizan para los encabezado de las columnas-->
     <th>URL</th>
-    <th>Contenido web</th>
     <th>Fecha</th>
 
     </thead>
     <tbody>
     <tr>
-        <td>value=""</td> <!--los td se utilizan para el valor de la fila-->
-        <td>www.gogg.com</td>
-        <td>aqui mostremos el contenido web</td>
-        <td>2022/02/03</td>
+        <td>${texto1}</td> <!--los td se utilizan para el valor de la fila-->
+        <td>${ur}</td>
+        <td>${fecha}</td>
 
     </tr>
     </tbody>
@@ -52,3 +39,4 @@
 
 </body>
 </html>
+

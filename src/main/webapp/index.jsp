@@ -5,6 +5,7 @@
     <title>consultas</title>
     <link rel="stylesheet" href="Css/stylo.css">
 </head>
+
 <body>
     <div class="formulario">
         <form action="ServletConsulta" method="post">

@@ -47,7 +47,7 @@ public class ImpDatosBusqueda  extends conexion implements DAOconexion<DatosBusq
                 preparedStatementListar = conexion.getConnexion().prepareStatement(sql);
             }
             ResultSet resultSet = preparedStatementListar.executeQuery();
-            while(resultSet.next()){
+           if(resultSet.next()){
              DatosBusqueda datosBusqueda = new DatosBusqueda();
              datosBusqueda.setText(resultSet.getString("texto"));
              datosBusqueda.setUrl(resultSet.getString("url"));
